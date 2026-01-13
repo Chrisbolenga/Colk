@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COLK asbl</title>
+  <link rel="icon" href="./Logo colk.JPG">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">COLK</div>
+
+  <nav>
+    <a href="#home" data-i18n="menu_home"></a>
+    <a href="#about" data-i18n="menu_about"></a>
+    <a href="#mission" data-i18n="menu_mission"></a>
+    <a href="#objectives" data-i18n="menu_objectives"></a>
+    <a href="#beneficiaries" data-i18n="menu_beneficiaries"></a>
+    <a href="#achievements" data-i18n="menu_achievements"></a>
+    <a href="#perspectives" data-i18n="menu_perspectives"></a>
+    <a href="#gallery" data-i18n="menu_gallery"></a>
+    <a href="#contact" data-i18n="menu_contact"></a>
+    <button class="don-btn" onclick="openDonation()" data-i18n="menu_donate"></button>
+  </nav>
+
+  <div class="lang-switch">
+    <button onclick="setLang('fr')">FR</button> |
+    <button onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <h1 data-i18n="hero_title"></h1>
+  <p data-i18n="hero_text"></p>
+  <button onclick="openDonation()" data-i18n="hero_donate"></button>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2 data-i18n="about_title"></h2>
+  <p data-i18n="about_text_1"></p>
+  <p data-i18n="about_text_2"></p>
+  <p data-i18n="about_text_3"></p>
+  <p data-i18n="about_address"></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th data-i18n="age_range"></th>
+        <th data-i18n="children_count"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>0–5</td><td>29</td></tr>
+      <tr><td>6–10</td><td>31</td></tr>
+      <tr><td>11–15</td><td>15</td></tr>
+      <tr><td>16–17</td><td>8</td></tr>
+      <tr><td>18</td><td>13</td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>96</strong></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ===== MISSION & VISION ===== -->
+<section id="mission" class="section alt">
+  <h2 data-i18n="mission_title"></h2>
+  <p data-i18n="mission_text"></p>
+
+  <h3 data-i18n="vision_title"></h3>
+  <p data-i18n="vision_text"></p>
+</section>
+
+<!-- ===== OBJECTIVES ===== -->
+<section id="objectives" class="section">
+  <h2 data-i18n="objectives_title"></h2>
+  <ul class="animated-list">
+    <li data-i18n="obj_1"></li>
+    <li data-i18n="obj_2"></li>
+    <li data-i18n="obj_3"></li>
+    <li data-i18n="obj_4"></li>
+    <li data-i18n="obj_5"></li>
+    <li data-i18n="obj_6"></li>
+  </ul>
+</section>
+
+<!-- ===== BENEFICIARIES ===== -->
+<section id="beneficiaries" class="section alt">
+  <h2 data-i18n="beneficiaries_title"></h2>
+  <p data-i18n="beneficiaries_text"></p>
+</section>
+
+<!-- ===== RESOURCES ===== -->
+<section class="section">
+  <h2 data-i18n="resources_title"></h2>
+  <p data-i18n="resources_text"></p>
+  <button onclick="toggleFinance()" data-i18n="finance_btn"></button>
+  <div id="finance" class="hidden">
+    <p data-i18n="finance_details"></p>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements" class="section alt">
+  <h2 data-i18n="achievements_title"></h2>
+  <ul class="grid">
+    <li data-i18n="ach_1"></li>
+    <li data-i18n="ach_2"></li>
+    <li data-i18n="ach_3"></li>
+    <li data-i18n="ach_4"></li>
+    <li data-i18n="ach_5"></li>
+    <li data-i18n="ach_6"></li>
+    <li data-i18n="ach_7"></li>
+  </ul>
+</section>
+
+<!-- ===== PERSPECTIVES ===== -->
+<section id="perspectives" class="section">
+  <h2 data-i18n="perspectives_title"></h2>
+  <ul class="grid">
+    <li data-i18n="per_1"></li>
+    <li data-i18n="per_2"></li>
+    <li data-i18n="per_3"></li>
+    <li data-i18n="per_4"></li>
+    <li data-i18n="per_5"></li>
+  </ul>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="section alt">
+  <h2 data-i18n="gallery_title"></h2>
+  <div class="gallery"></div>
+  <img src="./image1.JPG" alt="" width="200" height="250">
+  <img src="./image2.JPG" alt="" width="200" height="250">
+  <img src="./image3.JPG" alt="" width="200" height="250">
+  <img src="./image4.JPG" alt="" width="200" height="250">
+  <img src="./image5.JPG" alt="" width="200" height="250">
+  <img src="./image6.JPG" alt="" width="200" height="250">
+  <img src="./image7.JPG" alt="" width="200" height="250">
+  <img src="./image8.JPG" alt="" width="200" height="250">
+  <img src="./image9.JPG" alt="" width="200" height="250">
+  <img src="./image10.JPG" alt="" width="200" height="250">
+  <img src="./image11.JPG" alt="" width="200" height="250">
+  <img src="./image12.JPG" alt="" width="200" height="250">
+  <img src="./image13.JPG" alt="" width="200" height="250">
+  <img src="./image14.JPG" alt="" width="200" height="250">
+  <img src="./image15.JPG" alt="" width="200" height="250">
+  <img src="./image16.JPG" alt="" width="200" height="250">
+  <img src="./image17.JPG" alt="" width="200" height="250">
+  <img src="./image18.JPG" alt="" width="200" height="250">
+  <img src="./image19.JPG" alt="" width="200" height="250">
+  <img src="./image20.JPG" alt="" width="200" height="250">
+  <img src="./image21.JPG" alt="" width="200" height="250">
+  <img src="./image22.JPG" alt="" width="200" height="250">
+  <img src="./image23.JPG" alt="" width="200" height="250">
+  <img src="./image24.JPG" alt="" width="200" height="250">
+  <img src="./image25.JPG" alt="" width="200" height="250">
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <h2 data-i18n="contact_title"></h2>
+
+  <form class="contact-form" action="mailto:colkasbl@mail.com" method="post">
+    <input type="text" placeholder="Nom / Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit" data-i18n="contact_send"></button>
+  </form>
+
+  <p>
+    Avenue Lobo n°19bis, Quartier Luyi, Commune de Ngaba, Kinshasa<br>
+    Emails : colkasbl@yahoo.fr | colkasbl@mail.com<br>
+    Téléphones : +243 998 261 759 | +243 822 196 259 
+  </p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <a href="https://web.facebook.com/colkasbl1994/about" target="_blank"><img src="./téléchargement.png" alt="" width="30"> <a>
+    <a href="https://wa.me/+243897095194?text=Bonjour%20Bienvenue" target="_blank"> <img src="./téléchargement.jpg" alt="" width="38"></a>
+  <p>© 2025 COLK – Tous droits réservés.</p>
+</footer>
+
+<!-- ===== DON POPUP ===== -->
+<div id="donation" class="popup hidden">
+  <div class="popup-content">
+    <h3 data-i18n="don_title"></h3>
+      Banque : EQUITY BCDC<br>
+      Numéro de compte : 110107018123022<br>
+      SWIFT : BCDCCDKIXXX<br>
+      Nom bénéficiaire : BAGI PALEO MONIQUE
+    </p>
+    <button onclick="closeDonation()">OK</button>
+  </div>
+</div>
+
+<script src="lang.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

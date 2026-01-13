@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  color: #222;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #0a3d62;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar a, .don-btn {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('./fond.JPG') center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section.alt {
+  background: #f4f6f8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+.animated-list li {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.contact-form button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 12px;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
